@@ -4,6 +4,8 @@ import {useSelector,useDispatch} from "react-redux";
 import {changeColor,changeStyle } from '../actions/index.js';
 
 const App = () => {
+const colorState = useSelector(state =>  state.colorReducer)  
+const styleState = useSelector(state => state.styleReducer)  
 
 const dispatch =useDispatch();
 //code here 
